@@ -1,5 +1,16 @@
 @charset "UTF-8";
 
+
+@font-face {
+  font-family: 'passion';
+  src: url(fonts/Passion_One/PassionOne-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'sri';
+  src: url(fonts/Sriracha/Sriracha-Regular.ttf);
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -18,11 +29,16 @@ header{
 
 header > h1{
   padding-top: 50px;
+  font-family: 'passion';
+  font-weight: bolder;
   font-variant: small-caps;
+  font-size: 10vw;
 }
 
 header > p{
   padding-bottom: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
 }
 
 header a, footer a{
@@ -40,6 +56,8 @@ section{
   padding-bottom: 10vh;
   line-height: 2em;
   padding-left: 30px;
+  font-family: 'sri';
+  font-size: 3.5vw;
 }
 
 section.normal{
@@ -53,8 +71,9 @@ section.imagem{
 }
 
 section.imagem > p{
-  width: 400px;
+  display: inline-block;
   background-color: rgba(0, 0, 0, 0.253);
+  padding: 8px;
 }
 
 footer{
